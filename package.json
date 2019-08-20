@@ -1,0 +1,32 @@
+{
+  "name": "make-js-with-test",
+  "version": "0.0.1",
+  "description": "Make two files *.js and *.test.js",
+  "main": "",
+  "bin": {
+    "mjswt": "./distr/app.js"
+  },
+  "babel": {
+    "presets": [
+      "@babel/preset-env"
+    ]
+  },
+  "scripts": {
+    "build": "babel -d distr/ src/",
+    "prepublish": "npm run build",
+    "test": "jest"
+  },
+  "author": "Roman Oskolkov <wild_neo@mail.ru> (https://github.com/wildneo)",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.5.5",
+    "@babel/core": "^7.3.3",
+    "@babel/node": "^7.2.2",
+    "@babel/preset-env": "^7.3.1",
+    "eslint": "5.16.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.17.3",
+    "jest": "^24.8.0"
+  }
+}
