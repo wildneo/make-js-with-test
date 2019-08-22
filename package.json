@@ -1,6 +1,6 @@
 {
   "name": "make-js-with-test",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Make two files *.js and *.test.js",
   "main": "",
   "bin": {
